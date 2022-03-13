@@ -19,3 +19,16 @@
 .services {
     padding: 100px 0;
 }
+
+.card {
+    height: 410px;
+}
+
+.card-shadow {
+    box-shadow: 0 0 10px, rgba(red, green, blue, alpha);
+}
+
+.design-img {
+	width: 30%;
+	margin: auto;
+}
