@@ -32,3 +32,11 @@
 	width: 30%;
 	margin: auto;
 }
+
+#contactUs {
+    background-image: url(./images/background/old\ pc\ dark.jpg);
+    background: linear-gradient(rgba(0, 0, 0,), rgba(0,0,0));
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
