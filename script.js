@@ -1,25 +1,5 @@
-/*Landing page*/
-$(".about-btn").mouseenter(function () {
-	$(this).css("animation-play-state", "paused");
-});
-$(".about-btn").mouseleave(function () {
-	$(this).css("animation-play-state", "running");
-});
-
 
 /*What we do*/
-$('.design').click(function(){
-    $('img#design').toggle()
-    $('.des').toggle()
-})
-$('.development').click(function(){
-    $('img#dev').toggle()
-    $('.deve').toggle()
-})
-$('.product').click(function(){
-    $('img#prod').toggle()
-    $('.produ').toggle()
-})
 
 $('.des').hide()
 $('.deve').hide()
@@ -79,7 +59,7 @@ $(document).ready(function(){
 $('button#submit').click(function(){
     let name=$('input#name').val()
     if(name==""){
-        alert("please fill the required fields")
+        alert("Please fill the form")
     }
     else {
         alert(`${name}, we have received your message.Thank you for reaching out to us`)
