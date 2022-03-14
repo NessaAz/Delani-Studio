@@ -7,6 +7,25 @@ $(".about-btn").mouseleave(function () {
 });
 
 
+/*What we do*/
+$('.design').click(function(){
+    $('img#design').toggle()
+    $('.des').toggle()
+})
+$('.development').click(function(){
+    $('img#dev').toggle()
+    $('.deve').toggle()
+})
+$('.product').click(function(){
+    $('img#prod').toggle()
+    $('.produ').toggle()
+})
+
+$('.des').hide()
+$('.deve').hide()
+$('.produ').hide()
+
+
 
 /*Portfolio section*/
 $(document).ready(function(){
