@@ -24,7 +24,7 @@
 }
 
 
-/*/What we do*/
+/*What we do*/
 .card {
     height: 410px;
 }
@@ -40,20 +40,18 @@
 
 
 /*Portfolio*/
-#portfolio {
-	position: relative;
-}
+
 .portfolio-text {
 	position: absolute;
-	height: 100%;
+    padding: 2cm;
+	height: 80%;
 	width: 80%;
 	top: 0;
 	left: 0;
 	text-align: center;
-	display: flex;
+	display:block;
 	align-items: center;
 	justify-content: center;
-	background-color: rgba(255, 255, 255, 0.842);
 }
 
 
@@ -64,4 +62,16 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+
+/*Footer*/
+h6 {
+    font-size: 11px;
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+    text-align: center;
 }

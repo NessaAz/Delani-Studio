@@ -1,3 +1,4 @@
+/*Landing page*/
 $(".about-btn").mouseenter(function () {
 	$(this).css("animation-play-state", "paused");
 });
@@ -5,24 +6,63 @@ $(".about-btn").mouseleave(function () {
 	$(this).css("animation-play-state", "running");
 });
 
-$(document).ready(function () {
-	toggleCards();
-	addHoverEffect();
-});
 
-const toggleCards = () => {
-	$(".card-body p").hide();
-	$("#whatWeDo .card").click(function () {
-		const pElement = $(this).find("p");
-		pElement.slideToggle();
-		$(this).toggleClass("bg-secondary");
-	});
-};
 
-const addHoverEffect = () => {
-	const overlay = $("#portfolio h5");
-	overlay.hide();
-	$(".portfolio-container").hover(function () {
-		$(this).find("h5").slideToggle("fast");
-	});
-};
+/*Portfolio section*/
+$(document).ready(function(){
+     
+    $('#black').mouseover(function(){
+       
+        $('#black1').show() 
+    }).mouseout(function(){
+        $("#black1").hide()
+    })
+    $('#ontario').mouseover(function(){
+        $("#ontario1").show()
+    }).mouseout(function(){
+        $('#ontario1').hide()
+    })
+    $('#orange').mouseover(function(){
+        $('#orange1').show() 
+    }).mouseout(function(){
+        $("#orange1").hide()
+    })
+    $('#demo4').mouseover(function(){
+        $("#demo41").show()
+    }).mouseout(function(){
+        $('#demo41').hide()
+    })
+    $('#demo5').mouseover(function(){
+        $('#demo51').show() 
+    }).mouseout(function(){
+        $("#demo51").hide()
+    })
+    $('#demo6').mouseover(function(){
+        $("#demo61").show()
+    }).mouseout(function(){
+        $('#demo61').hide()
+    })
+    $('#burned').mouseover(function(){
+        $('#burned1').show() 
+    }).mouseout(function(){
+        $("#burned1").hide()
+    })
+    $('#giraffe').mouseover(function(){
+        $("#giraffe1").show()
+    }).mouseout(function(){
+        $('#giraffe1').hide()
+    })
+
+})
+
+
+/*Pop up alert*/
+$('button#submit').click(function(){
+    let name=$('input#name').val()
+    if(name==""){
+        alert("please fill the required fields")
+    }
+    else {
+        alert(`${name}, we have received your message.Thank you for reaching out to us`)
+    }
+})
